@@ -54,7 +54,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20sp"
                 android:tag="0" />
 
@@ -64,9 +64,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="1" />
 
             <ImageView
                 android:id="@+id/tap2"
@@ -74,9 +74,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="2" />
         </LinearLayout>
 
         <LinearLayout
@@ -91,9 +91,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="3" />
 
             <ImageView
                 android:id="@+id/tap4"
@@ -101,9 +101,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="4" />
 
             <ImageView
                 android:id="@+id/tap5"
@@ -111,9 +111,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="5" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,9 +128,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="6" />
 
             <ImageView
                 android:id="@+id/tap7"
@@ -138,9 +138,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="7" />
 
             <ImageView
                 android:id="@+id/tap8"
@@ -148,9 +148,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/_0_x"
-                android:onClick="tapTapPlayers"
+                android:onClick="user_click"
                 android:padding="20dp"
-                android:tag="0" />
+                android:tag="8" />
 
         </LinearLayout>
 
@@ -161,6 +161,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tap_to_start_game"
+        android:onClick="reset"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
