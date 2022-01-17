@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             status.setText("Draw - Tap to reset game");
-
+            turn = 0;
         }
     }
 
