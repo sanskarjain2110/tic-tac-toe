@@ -12,6 +12,8 @@ import android.widget.Toast;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
+    public static boolean game_key = true;
+
     public static int[] cell_status = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     // O --> -1
     // empty --> 0
@@ -35,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
     public void user_click(View view) {
         ImageView img = (ImageView) view;
         TextView status = findViewById(R.id.status);
-        int cell_pos = Integer.parseInt(img.getTag().toString());
 
+        int cell_pos = Integer.parseInt(img.getTag().toString());
         // check weather cell is empty or not
         if (cell_status[cell_pos] == 0) {
             if (turn != 0) {
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void win_condition(TextView status) {
-        if (moves_left > 0) {
+        if (moves_left >= 0) {
             for (int i = 0; i < 8; i++) {
                 if (cell_status[win_positions[i][0]] != 0 &&
                         cell_status[win_positions[i][0]] == cell_status[win_positions[i][1]] &&
@@ -77,13 +79,15 @@ public class MainActivity extends AppCompatActivity {
                         status.setText("X wins - Tap to reset game");
                     }
                     turn = 0;
+                    game_key = false;
                     break;
                 }
             }
-        } else {
+
+            if (moves_left==0&&game_key==true) {
             status.setText("Draw - Tap to reset game");
             turn = 0;
-        }
+        }}
     }
 
    public void reset(View view) {
@@ -102,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
            turn = 1;
            moves_left = 9;
+           game_key=true;
 
            TextView status = findViewById(R.id.status);
            status.setText("X's Turn - Tap to play");
