@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Tic Tac Toe</string>
+    <string name="app_name">Tic-Tac-Toe</string>
     <string name="welcome_to_tic_tac_toe">Welcome To Tic-Tac-Toe</string>
     <string name="main_grid">Main grid</string>
     <string name="_0_x">0/X</string>
     <string name="tap_to_start_game">tap to start game</string>
-    <string name="second_player_turn">second player turn</string>
-    <string name="first_player_turn">first player turn</string>
+    <string name="O_turn">O\'s Turn - Tap to play</string>
+    <string name="X_turn">X\'s Turn - Tap to play</string>
 </resources>

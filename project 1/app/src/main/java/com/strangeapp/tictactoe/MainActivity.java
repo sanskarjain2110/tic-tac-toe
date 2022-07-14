@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
                     img.setImageResource(R.drawable.x);
                     cell_status[cell_pos] = 1;
                     turn = -1;
-                    status.setText("O's Turn - Tap to play");
+                    status.setText(R.string.O_turn);
                     moves_left--;
                 } else if (turn == -1) {
                     img.setImageResource(R.drawable.o);
                     cell_status[cell_pos] = -1;
                     turn = 1;
-                    status.setText("X's Turn - Tap to play");
+                    status.setText(R.string.X_turn);
                     moves_left--;
                 }
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
            game_key=true;
 
            TextView status = findViewById(R.id.status);
-           status.setText("X's Turn - Tap to play");
+           status.setText(R.string.X_turn);
 
        }
    }
